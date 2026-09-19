@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --warna-background-header : #f0f0e1;
+    --warna-judul: #570418;
+    --warna-teks-terang : #f0f0e1;
+    --jarak-section :25px;
+    --ukuran-judul :5rem;
+    --warna-background-section: #30020c;
+}
+header{
+    background-color: var(--warna-background-header);
+    padding: var(--jarak-section);
+    position: relative;
+    border-radius: 16px;
+}
+.profil-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+   
+}
+.profil-header h1,
+.profil-header p{
+    margin: 0;
+}
+.subjudul {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+.konten-utama{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 0px;
+}
+ header img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid var(--warna-judul)
+}
+
+h1{
+    
+    color:var(--warna-judul);
+   
+    font-size:var(--ukuran-judul);
+    
+
+}
+
+h2,h3{
+    display: inline-block;
+    background-color: var(--warna-background-header);
+    color: var(--warna-judul);
+    padding: 10px 25px;
+    border-radius: 999px;
+}
+
+h3{
+    display: block;
+    width: fit-content;
+    margin-top: 15px;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    color: var(--warna-teks-terang);
+    padding: var(--jarak-section);
+    
+    
+}
+
+aside{
+    background-color: var(--warna-background-header);
+    padding: var(--jarak-section);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.Quote{
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--warna-judul);
+}
+
+main{
+    background-color: var(--warna-background-section);
+    border-radius: 16px;
+}
+
+@media(prefers-color-scheme: dark){
+    :root{
+        --warna-background-header: #2a2a2a;
+        --warna-judul: #f0f0e1;
+        --warna-teks-terang: #e0e0e0;
+        --warna-background-section: #1a1a1a;
+    }
+}
+
+nav a{
+    color: var(--ukuran-judul);
+    text-decoration: none;
+}
+
+
+
+
+   
